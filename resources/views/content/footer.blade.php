@@ -4,45 +4,34 @@
             <div class="col-lg-4">
                 <img src="{{ asset('image/logofooter.png') }}" class="img-fluid w-50" alt="">
             </div>
-            <div class="col-lg-2  text-center">
-                <div>
-                    <h4 class="text-white">ABOUT US</h4>
-                    <div class="pt-3">
-                        <a class="text-white" href="#">Contact Us</a>
+            <div class="col-lg-6  text-center d-flex flex-column justify-content-center">
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+
+                        <h4 class="text-white pt-3">ABOUT US</h4>
                     </div>
-                    <div class="pt-3">
-                        <a class="text-white" href="#">Term of service</a>
+                    <div class="col-lg-3">
+                        <div class="pt-3">
+                            <a class="text-white" href="#">Contact Us</a>
+                        </div>
                     </div>
-                    <div class="pt-3">
-                        <a class="text-white" href="#">Privacy Policy</a>
+                    <div class="col-lg-3">
+                        <div class="pt-3">
+                            <a class="text-white" href="#">Contact Us</a>
+                        </div>
                     </div>
+                    <div class="col-lg-3">
+                        <div class="pt-3">
+                            <a class="text-white" href="#">Contact Us</a>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
 
-            <div class="col-lg-3 text-center">
-                <h4 class="text-white">GETTING STARTED</h4>
-                <div class="pt-3">
-                    <a class="text-white" href="#">Youtube downloader</a>
-                </div>
-                <div class="pt-3">
-                    <a class="text-white" href="#">Facebook downloader</a>
-                </div>
-                <div class="pt-3">
-                    <a class="text-white" href="#">Tik Tok downloader</a>
-                </div>
-            </div>
-            <div class="col-lg-3 text-center">
-                <h4 class="text-white">GETTING STARTED</h4>
-                <div class="pt-3">
-                    <a class="text-white" href="#">Youtube downloader</a>
-                </div>
-                <div class="pt-3">
-                    <a class="text-white" href="#">Facebook downloader</a>
-                </div>
-                <div class="pt-3">
-                    <a class="text-white" href="#">Tik Tok downloader</a>
-                </div>
-            </div>
+
         </div>
         <hr>
         <div class="text-center pb-5">

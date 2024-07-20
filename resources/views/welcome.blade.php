@@ -10,41 +10,48 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('image/icon.png')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('image/icon.png') }}">
     <script src="{{ asset('js/jquery-3.3.1.js') }}"></script>
 
     <style>
-       .loader2 {
-    position: relative;
-    width: 64px;
-    height: 64px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transform: rotate(45deg);
-    overflow: hidden;
-  }
-  .loader2:after{
-    content: '';
-    position: absolute;
-    inset: 8px;
-    margin: auto;
-    background: #222b32;
-  }
-  .loader2:before{
-    content: '';
-    position: absolute;
-    inset: -15px;
-    margin: auto;
-    background: #de3500;
-    animation: diamondLoader2 2s linear infinite;
-  }
-  @keyframes diamondLoader2 {
-    0%  ,10% {
-      transform: translate(-64px , -64px) rotate(-45deg)
-    }
-    90% , 100% {
-      transform: translate(0px , 0px) rotate(-45deg)
-    }
-  }
+        .loader2 {
+            position: relative;
+            width: 64px;
+            height: 64px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: rotate(45deg);
+            overflow: hidden;
+        }
+
+        .loader2:after {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            margin: auto;
+            background: #222b32;
+        }
+
+        .loader2:before {
+            content: '';
+            position: absolute;
+            inset: -15px;
+            margin: auto;
+            background: #de3500;
+            animation: diamondLoader2 2s linear infinite;
+        }
+
+        @keyframes diamondLoader2 {
+
+            0%,
+            10% {
+                transform: translate(-64px, -64px) rotate(-45deg)
+            }
+
+            90%,
+            100% {
+                transform: translate(0px, 0px) rotate(-45deg)
+            }
+        }
 
 
 

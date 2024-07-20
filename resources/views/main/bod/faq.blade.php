@@ -10,7 +10,7 @@
                         <button class="accordion-button background-ca fw-bolder" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                             aria-controls="collapseOne">
-                            <i class="bi bi-badge-hd-fill pe-2"></i> Làm thế nào để sao chép link video trên
+                           Làm thế nào để sao chép link video trên
                             điện thoại android, iphone?
                         </button>
                     </h2>
@@ -31,7 +31,7 @@
                         <button class="accordion-button collapsed background-ca fw-bolder" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                             aria-controls="collapseTwo">
-                            <i class="bi bi-badge-hd-fill pe-2"></i> Làm thế nào để tải video mà không bị
+                           Làm thế nào để tải video mà không bị
                             watermark cho điện thoại ?
                         </button>
                     </h2>
@@ -52,7 +52,7 @@
                         <button class="accordion-button collapsed background-ca fw-bolder" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                             aria-controls="collapseThree">
-                            <i class="bi bi-badge-hd-fill pe-2"></i> Tôi có thể tải xuống video của bất kỳ
+                           Tôi có thể tải xuống video của bất kỳ
                             người dùng nào không?
                         </button>
                     </h2>
@@ -73,7 +73,7 @@
                         <button class="accordion-button collapsed background-ca fw-bolder" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapsefor" aria-expanded="false"
                             aria-controls="collapseThree">
-                            <i class="bi bi-badge-hd-fill pe-2"></i> Tôi có thể tải xuống video của bất kỳ
+                           Tôi có thể tải xuống video của bất kỳ
                             người dùng nào không?
                         </button>
                     </h2>
