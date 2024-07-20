@@ -1,0 +1,9 @@
+@extends('welcome')
+@section('content')
+    @include('main.bod.search')
+    @include('main.bod.instructions')
+    @include('main.bod.down')
+    @include('main.bod.tool')
+    @include('main.bod.whytowe')
+    @include('main.bod.faq')
+@endsection
