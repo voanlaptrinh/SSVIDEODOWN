@@ -10,8 +10,8 @@
                         <form class="input-group shadow mb-5 bg-body rounded search-form" id="form-search" method="GET"
                             role="search">
                             @csrf
-                            <input type="search" class="form-control search-input rounded" name="query" autocomplete="off"
-                                autocorrect="off" aria-label="Search"
+                            <input type="search" class="form-control search-input rounded" name="query"
+                                autocomplete="off" autocorrect="off" aria-label="Search"
                                 placeholder="Dán liên kết đến video của bạn vào đây">
                             <button class="btn btn-danger rounded" id="btn-submit" type="button">Bắt Đầu <i
                                     class="bi bi-arrow-right"></i></button>
@@ -47,7 +47,16 @@
     </div>
 </div>
 
-
+<style>
+    .title {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        /* Optional: Limit the width if needed */
+    }
+</style>
 
 
 
@@ -56,10 +65,21 @@
     console.log(base_url);
     var model_co = $('.model_co');
     var loadingHtml = `<div class="loading text-center mt-4">
-					<div class="p-5"><span class="loader2"></span> </div>
+					<div class="p-5"><span class="loader"></span> </div>
 					<p class="mb-5">Please wait while the file is being prepared for downloading</p>
 				</div>`;
     $(document).ready(function() {
+        
+            var titles = document.querySelectorAll('.title');
+
+            titles.forEach(function(title) {
+                if (title.offsetWidth < title.scrollWidth) {
+                    title.classList.add('text-overflow');
+                } else {
+                    title.classList.remove('text-overflow');
+                }
+            });
+     
 
 
         // Xử lý sự kiện submit form tìm kiếm
@@ -67,17 +87,37 @@
             event.preventDefault();
             var videoUrl = $('.search-input').val().trim();
 
-            searchVideo(videoUrl);
+            var isUrl = isValidUrl(videoUrl);
+
+            if (isUrl) {
+                searchVideo(videoUrl);
+            } else {
+                searchVideoTitle(videoUrl);
+            }
         });
         $('#btn-submit').on('click', function(event) {
             event.preventDefault();
             var videoUrl = $('.search-input').val().trim();
 
-            searchVideo(videoUrl);
+            var isUrl = isValidUrl(videoUrl);
+
+            if (isUrl) {
+                searchVideo(videoUrl);
+            } else {
+                searchVideoTitle(videoUrl);
+            }
         });
 
+
+
+
+
         // Hàm tìm kiếm video
-        function searchVideo(videoUrl) {
+      
+
+    });
+
+    function searchVideo(videoUrl) {
             if (!videoUrl) {
                 return false;
             }
@@ -259,11 +299,15 @@
                 }
             });
         }
+    function isValidUrl(string) {
+        try {
+            new URL(string);
+            return true;
+        } catch (_) {
+            return false;
+        }
+    }
 
-    });
-
-
-  
 
 
 
@@ -277,11 +321,9 @@
             return false;
         }
 
-        var loading = `<div style="display: flex;justify-content: center" class="col-lg-12">
-        <div class="loadding" id="loadding">
-            <img width="50%" src="${base_url}/image/loading.gif" alt="">
-        </div>
-        </div>`;
+        var loading = `<div class="d-flex justify-content-center">
+                   <span class="loader"></span>
+                </div>`;
         dowload.html(loading);
         var csrfToken = $('meta[name="csrf-token"]').attr('content');
         $.ajax({
@@ -298,18 +340,20 @@
                 if (response) {
                     dowload.html(loading);
                     dowload.empty();
-                    var contentvideo = `<div class="row"></div>`;
+                    var contentvideo = `<div class="row">
+                        
+                        </div>`;
                     var $contentvideo = $(contentvideo); // Convert string to jQuery object
 
                     $.each(videos, function(index, video) {
                         var itemList = `
-                    <div class="col-sm-6 col-md-4 col-xl-4 pt-3">
-                        <div class="card text-center position-relative btn-transition p-3 height-destop">
+                    <div class="col-sm-6 col-md-4 col-xl-3 pt-3">
+                        <div class="card text-center position-relative btn-transition p-3 height-destop background-ca">
                             <div class="icon-xl bg-body mx-auto rounded-circle mb-3">
-                                <img src="https://i.ytimg.com/vi/${video.v}/0.jpg" alt="">
+                                <img src="https://i.ytimg.com/vi/${video.v}/0.jpg" alt="" class="img-fluid rounded-2">
                             </div>
                             <h6 class="mb-2 font-destop">
-                                <a href="#" onclick="searchVideo('https://www.youtube.com/watch?v=${video.v}')" id="titleDownload" class="stretched-link">${video.t}</a>
+                               <a href="#" onclick="searchVideo('https://www.youtube.com/watch?v=${video.v}')" id="titleDownload" class="stretched-link title text-black">${video.t}</a>
                             </h6>
                         </div> 
                     </div>`;
@@ -344,7 +388,9 @@
 
         // Hiển thị thanh loading
         var loadingHtml =
-            `<div class="loading text-center mt-4"><img src="${base_url}/image/loading.gif" class="mb-3"></div>`;
+            `<div class="d-flex justify-content-center">
+                   <span class="loader"></span>
+                </div>`;
         model_co.html(loadingHtml);
 
         $.ajax({
