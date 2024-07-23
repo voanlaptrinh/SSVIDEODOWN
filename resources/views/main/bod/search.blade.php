@@ -1,9 +1,8 @@
 <section class="container">
     <div class="row justify-content-center">
         <div class="col-lg-8 pt-5 d-flex flex-column align-items-center justify-content-center">
-            <h2 class="text-center text-uppercase">Tải xuống Video và Âm thanh từ Mọi Nền tảng Mạng Xã Hội</h2>
-            <h5 class="text-center pt-3">Tải xuống video và tệp âm thanh từ YouTube, Facebook, TikTok miễn phí.
-                Không cần đăng ký, chất lượng cao, hỗ trợ nhiều định dạng và độ phân giải.</h5>
+            <h2 class="text-center text-uppercase">@lang('home.h1')</h2>
+            <h5 class="text-center pt-3">@lang('home.h1_sub')</h5>
             <div class="col-md-12">
                 <div class="card p-3 border-0">
                     <div class="card-body">
@@ -12,8 +11,8 @@
                             @csrf
                             <input type="search" class="form-control search-input rounded" name="query"
                                 autocomplete="off" autocorrect="off" aria-label="Search"
-                                placeholder="Dán liên kết đến video của bạn vào đây">
-                            <button class="btn btn-danger rounded" id="btn-submit" type="button">Bắt Đầu <i
+                                placeholder="@lang('home.howto_step2')">
+                            <button class="btn btn-danger rounded" id="btn-submit" type="button">@lang('main.start') <i
                                     class="bi bi-arrow-right"></i></button>
                         </form>
                     </div>
@@ -33,7 +32,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header" style="background:#DF4952">
-                <h5 class="modal-title text-white" id="exampleModalLabel">Chuyển đổi</h5>
+                <h5 class="modal-title text-white" id="exampleModalLabel">@lang('main.convert')</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -68,7 +67,7 @@
 					<div class="p-5"><span class="loader"></span> </div>
 					<p class="mb-5">Please wait while the file is being prepared for downloading</p>
 				</div>`;
-    $(document).ready(function() {
+             $(document).ready(function() {
         
             var titles = document.querySelectorAll('.title');
 

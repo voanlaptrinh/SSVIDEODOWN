@@ -10,7 +10,7 @@
                         <div>
                             <img src="{{ asset('/image/check.png') }}" alt="">
                         </div>
-                        <div class="ps-3">
+                        <div class="ps-3 pe-3">
                             <h5>
                                 Nhiều nền tảng được hỗ trợ
                             </h5>
@@ -25,7 +25,7 @@
                         <div>
                             <img src="{{ asset('/image/check.png') }}" alt="">
                         </div>
-                        <div class="ps-3">
+                        <div class="ps-3 pe-3">
                             <h5>
                                 Tốc độ tải xuống nhanh
                             </h5>
@@ -39,7 +39,7 @@
                         <div>
                             <img src="{{ asset('/image/check.png') }}" alt="">
                         </div>
-                        <div class="ps-3">
+                        <div class="ps-3 pe-3">
                             <h5>
                                 Giao diện dễ sử dụng
                             </h5>
@@ -53,7 +53,7 @@
                         <div>
                             <img src="{{ asset('/image/check.png') }}" alt="">
                         </div>
-                        <div class="ps-3">
+                        <div class="ps-3 pe-3">
                             <h5>
                                 Tải xuống không giới hạn
                             </h5>
@@ -67,7 +67,7 @@
                         <div>
                             <img src="{{ asset('/image/check.png') }}" alt="">
                         </div>
-                        <div class="ps-3">
+                        <div class="ps-3 pe-3">
                             <h5>
                                 Tải xuống chất lượng cao
                             </h5>
@@ -81,7 +81,7 @@
                         <div>
                             <img src="{{ asset('/image/check.png') }}" alt="">
                         </div>
-                        <div class="ps-3">
+                        <div class="ps-3 pe-3">
                             <h5>
                                 Không cần cài đặt
                             </h5>

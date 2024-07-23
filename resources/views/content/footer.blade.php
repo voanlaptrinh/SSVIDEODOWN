@@ -14,17 +14,17 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="pt-3">
-                            <a class="text-white" href="#">Contact Us</a>
+                            <a class="text-white" href="{{ $controller->createUrl('contactUs') }}">Contact Us</a>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="pt-3">
-                            <a class="text-white" href="#">Contact Us</a>
+                            <a class="text-white" href="{{ $controller->createUrl('termService') }}">Term of service</a>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="pt-3">
-                            <a class="text-white" href="#">Contact Us</a>
+                            <a class="text-white" href="{{ $controller->createUrl('privatePolicy') }}">Privacy Policy</a>
                         </div>
                     </div>
                    
