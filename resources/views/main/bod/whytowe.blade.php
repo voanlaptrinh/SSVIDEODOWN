@@ -1,6 +1,6 @@
 
 <section class="container">
-    <h3 class="text-center pt-5 pb-4">Tại sao bạn lên chọn chúng tôi?</h3>
+    <h3 class="text-center pt-5 pb-4">@lang('home.ft')</h3>
 
     <div class="row justify-content-center">
         <div class="col-lg-8 pt-5">
@@ -12,11 +12,9 @@
                         </div>
                         <div class="ps-3 pe-3">
                             <h5>
-                                Nhiều nền tảng được hỗ trợ
+                                @lang('home.ft1')
                             </h5>
-                            <p style="width: 90%">Hỗ trợ nhiều nền tảng chia sẻ video và truyền thông xã hội,
-                                bao gồm YouTube,
-                                Facebook, Instagram, Twitter, SoundCloud, TikTok, Vimeo, v.v.</p>
+                            <p style="width: 90%"> @lang('home.ft1_detail')</p>
                         </div>
                     </div>
                 </div>
@@ -27,10 +25,9 @@
                         </div>
                         <div class="ps-3 pe-3">
                             <h5>
-                                Tốc độ tải xuống nhanh
+                                @lang('home.ft2')
                             </h5>
-                            <p style="width: 90%">Downloader cung cấp tốc độ tải xuống nhanh chóng, cho phép
-                                người dùng lưu các video yêu thích của họ một cách nhanh chóng và dễ dàng.</p>
+                            <p style="width: 90%"> @lang('home.ft2_detail')</p>
                         </div>
                     </div>
                 </div>
@@ -41,10 +38,9 @@
                         </div>
                         <div class="ps-3 pe-3">
                             <h5>
-                                Giao diện dễ sử dụng
+                                @lang('home.ft3')
                             </h5>
-                            <p style="width: 90%">Giao diện đơn giản và dễ hiểu, giúp người dùng dễ dàng tải
-                                xuống các video yêu thích của họ chỉ bằng vài cú nhấp chuột.</p>
+                            <p style="width: 90%"> @lang('home.ft3_detail')</p>
                         </div>
                     </div>
                 </div>
@@ -55,10 +51,9 @@
                         </div>
                         <div class="ps-3 pe-3">
                             <h5>
-                                Tải xuống không giới hạn
+                                @lang('home.ft4')
                             </h5>
-                            <p style="width: 90%">Downloader cho phép người dùng tải xuống miễn phí bao nhiêu
-                                video tùy thích mà không có bất kỳ hạn chế nào.</p>
+                            <p style="width: 90%"> @lang('home.ft4_detail')</p>
                         </div>
                     </div>
                 </div>
@@ -69,10 +64,9 @@
                         </div>
                         <div class="ps-3 pe-3">
                             <h5>
-                                Tải xuống chất lượng cao
+                                @lang('home.ft5')
                             </h5>
-                            <p style="width: 90%">Cung cấp tải xuống video chất lượng cao, đảm bảo rằng người
-                                dùng có thể tận hưởng trải nghiệm xem tốt nhất có thể.</p>
+                            <p style="width: 90%">@lang('home.ft5_detail')</p>
                         </div>
                     </div>
                 </div>
@@ -83,10 +77,9 @@
                         </div>
                         <div class="ps-3 pe-3">
                             <h5>
-                                Không cần cài đặt
+                                @lang('home.ft6')
                             </h5>
-                            <p style="width: 90%">Downloader là một trình tải xuống video trực tuyến, có nghĩa
-                                là người dùng không cần cài đặt bất kỳ phần mềm nào để sử dụng nó.</p>
+                            <p style="width: 90%">@lang('home.ft6_detail')</p>
                         </div>
                     </div>
                 </div>

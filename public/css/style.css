@@ -188,10 +188,10 @@ a {
 .step-line {
     position: absolute;
     left: 50%;
-    top: -18px;
+    top: -48px;
     transform: translateX(-50%);
     width: 4px;
-    height: 185px;
+    height: 349px;
     background-color: #000;
     z-index: 0;
 }
@@ -235,7 +235,7 @@ body {
     min-height: 100vh;
 }
 
-header,
+
 main,
 footer {
     padding: 20px;
@@ -248,4 +248,26 @@ main {
 footer {
     background-color: #f1f1f1;
     text-align: center;
+}
+@media (min-width: 992px) {
+    .shows {
+        width: 980px;
+        right: 0;
+        left: unset;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        right: -100px !important;
+        left: unset;
+    }
+    .shows-sa{
+        right: unset !important;
+        left: unset;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobb {
+        text-align: center
+    }
 }

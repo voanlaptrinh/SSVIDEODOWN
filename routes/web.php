@@ -44,5 +44,27 @@ Route::group(['middleware' => 'locale'], function () {
   Route::get('/privatePolicy/{language?}', [FooterController::class, 'privatePolicy'])->name('privatePolicy');
 
 
+  Route::get('/youtube-converter/{language?}', [HomeController::class, 'youtubeDowload'])->name('youtube');
+  Route::get('/youtube-mp3/{language?}', [HomeController::class, 'youtubeDowloadMP3'])->name('youtubemp3');
+  Route::get('/youtube-mp4/{language?}', [HomeController::class, 'youtubeDowloadMP4'])->name('youtubemp4');
+  Route::get('/tiktok-downloader/{language?}', [HomeController::class, 'tiktokDowload'])->name('tiktok');
+  Route::get('/facebook-downloader/{language?}', [HomeController::class, 'facebookDowload'])->name('facebook');
+  Route::get('/instagram-downloader/{language?}', [HomeController::class, 'instagramDowload'])->name('instagram');
+  Route::get('/twitter-downloader/{language?}', [HomeController::class, 'twitterDowload'])->name('twitter');
+  Route::get('/soundcloud-downloader/{language?}', [HomeController::class, 'soundDowload'])->name('sound');
+  Route::get('/vimeo-downloader/{language?}', [HomeController::class, 'vimeoDowload'])->name('vimeo');
+  Route::get('/linkedin-downloader/{language?}', [HomeController::class, 'linkedinDowload'])->name('linkedin');
+  Route::get('/9gag-downloader/{language?}', [HomeController::class, 'gagDowload'])->name('9gag');
+  Route::get('/reddit-downloader/{language?}', [HomeController::class, 'redditDowload'])->name('reddit');
+  Route::get('/dailymotion-downloader/{language?}', [HomeController::class, 'dailymotionDowload'])->name('dailymotion');
+  Route::get('/pinterest-downloader/{language?}', [HomeController::class, 'pinterestDowload'])->name('pinterest');
+  Route::get('/kwai-downloader/{language?}', [HomeController::class, 'kwaiDowload'])->name('kwai');
+  Route::get('/likee-downloader/{language?}', [HomeController::class, 'likeeDowload'])->name('likee');
+  Route::get('/vk-downloader/{language?}', [HomeController::class, 'vkDowload'])->name('vk');
+  Route::get('/bili-downloader/{language?}', [HomeController::class, 'biliDowload'])->name('bili');
+
+
+
+
   Route::get('/{language?}', [HomeController::class, 'home'])->name('home');
 });

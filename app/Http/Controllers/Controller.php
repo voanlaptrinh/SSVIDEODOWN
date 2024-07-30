@@ -20,7 +20,24 @@ class Controller extends BaseController
     ];
     static public $rewrite_controllers = array(
         'home' => '/data/home.txt',
-    
+        'youtube' => '/data/youtube.txt',
+        'youtubemp3' => '/data/youtubemp3.txt',
+        'youtubemp4' => '/data/youtubemp4.txt',
+        'tiktok' => '/data/tiktok.txt',
+        'facebook' => '/data/facebook.txt',
+        'instagram' => '/data/instagram.txt',
+        'twitter' => '/data/twitter.txt',
+        'sound' => '/data/sound.txt',
+        'vimeo' => '/data/vimeo.txt',
+        'linkedin' => '/data/linkedin.txt',
+        '9gag' => '/data/9gag.txt',
+        'reddit' => '/data/reddit.txt',
+        'dailymotion' => '/data/dailymotion.txt',
+        'pinterest' => '/data/pinterest.txt',
+        'kwai' => '/data/kwai.txt',
+        'likee' => '/data/likee.txt',
+        'vk' => '/data/vk.txt',
+        'bili' => '/data/bili.txt',
     );
     public $hl;
     public $rules;
